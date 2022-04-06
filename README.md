@@ -1,4 +1,4 @@
-# Treinamento: Desafio de 21 dias em DevOps 
+# Treinamento: Desafio de 21 dias em DevOps
 
 Acredito que Devops define em: Mudanças, autamatizar processos manuais, mensurar resultados e compartilhar conhecimento.
 
@@ -37,3 +37,5 @@ Acredito que Devops define em: Mudanças, autamatizar processos manuais, mensura
 
 
 
+### Créditos
+* Professor Danilo->([Linkedin](https://www.linkedin.com/in/danilo-aparecido-dos-santos-03101034/)) - Torne-se um programador->[https://www.torneseumprogramador.com.br/](https://www.torneseumprogramador.com.br/)
