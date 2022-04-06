@@ -1,26 +1,33 @@
-# shell-desafio-devops
+# Treinamento: Desafio de 21 dias em DevOps 
 
+Acredito que Devops define em: Mudanças, autamatizar processos manuais, mensurar resultados e compartilhar conhecimento.
+
+### Importânte
 * arquivos .sh no diretório base;
+* executar: ./nomeDoArquivo.sh
 
 
-### Comandos [scripts](base/)
+### Comandos([arquivos de shellScript](base/))
 
-#### lista conteúdo do diretório(permissões e arquivos oculto), ls -la
+#### Listar conteúdo do diretório(permissões e arquivos oculto), ls -la
 [base/listar-dados-diretorio.sh](base/listar-dados-diretorio.sh)
 
-##### criar diretório, mkdir 
+##### Exercício 1 
+[base/criado_via_script.sh](base/criado_via_script.sh)
+
+##### Criar diretório, mkdir 
 [base/criar_diretorio.sh](base/criar_diretorio.sh)
 
-#### criar aquivo, touch ou echo
+#### Criar aquivo, touch ou echo
 [base/criar_arquivo.sh](base/criar_arquivo.sh)
 
-#### pega parâmetros com "read"
+#### Pegar parâmetros com "read"
 [base/input-usuario.sh](base/input-usuario.sh)
 
-#### Codicional se/if
+#### Condicional se/if
 [base/condicional.sh](base/condicional.sh)
 
-#### Verificar conteúdo dentro da frase
+#### Verificar conteúdo dentro de frase
 [base/indexof.sh](base/indexof.sh)
 
 #### Regex: # =~ operador de regex 
