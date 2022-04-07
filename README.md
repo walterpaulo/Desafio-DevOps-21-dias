@@ -4,6 +4,7 @@ Acredito que Devops define em: Mudanças, autamatizar processos manuais, mensura
 
 ### Importânte
 * arquivos .sh no diretório base;
+* arquivos do TerraForm no diretório base/terraform [base/terraform](base/terraform);
 * executar: ./nomeDoArquivo.sh
 
 
@@ -46,6 +47,29 @@ Acredito que Devops define em: Mudanças, autamatizar processos manuais, mensura
 
 #### Loop/laço: while, for e for + ls
 [base/loop.sh](base/loop.sh)
+
+### Terraform [https://www.terraform.io/](https://www.terraform.io/)
+É uma ferramenta pra open-source para criar infraestrutura via código, utiliza linguagem HCL, parecido com arquivos json utilizaremos o provider aws
+
+#### Instalação do TerraForm [https://learn.hashicorp.com/tutorials/terraform/install-cli](https://learn.hashicorp.com/tutorials/terraform/install-cli)
+
+##### Atualiza o repositório de pacotes e instala os pacotes gnupg(chave de criptografica), software-properties-common e curl(comunicacar com a internet)  em ambiente Debian e derivados
+```
+$ sudo apt-get update && sudo apt-get install -y gnupg software-properties-common curl
+```
+
+```
+$ curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo apt-key add -
+```
+
+```
+sudo apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main"
+```
+
+#### Comando para mostrar versão do terraform
+```
+terraform -v
+```
 
 ### Créditos
 * Professor Danilo->([Linkedin](https://www.linkedin.com/in/danilo-aparecido-dos-santos-03101034/)) - Torne-se um programador->[https://www.torneseumprogramador.com.br/](https://www.torneseumprogramador.com.br/)
