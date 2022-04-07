@@ -35,7 +35,13 @@ Acredito que Devops define em: Mudanças, autamatizar processos manuais, mensura
 
 [https://rubular.com/](https://rubular.com/)
 
+#### Retorna uma array por índice: split
+[base/indexof.sh](base/split.sh)
+
+#### Retorna uma array por índice: split (forma 2)
+[base/indexof.sh](base/split2.sh)
 
 
 ### Créditos
 * Professor Danilo->([Linkedin](https://www.linkedin.com/in/danilo-aparecido-dos-santos-03101034/)) - Torne-se um programador->[https://www.torneseumprogramador.com.br/](https://www.torneseumprogramador.com.br/)
+
