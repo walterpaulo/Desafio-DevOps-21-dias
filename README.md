@@ -33,17 +33,19 @@ Acredito que Devops define em: Mudanças, autamatizar processos manuais, mensura
 #### Regex: # =~ operador de regex 
 [base/regex.sh](base/regex.sh)
 
-[https://rubular.com/](https://rubular.com/)
+##### [https://rubular.com/](https://rubular.com/)
 
 #### Retorna uma array por índice: split
-[base/indexof.sh](base/split.sh)
+[base/split.sh](base/split.sh)
 
 #### Retorna uma array por índice: split (forma 2)
-[base/indexof.sh](base/split2.sh)
+[base/split2.sh](base/split2.sh)
 
 #### Pegar uma coleção de string a partir de um ponto: ${nomeVariavel:0:4}
-[base/indexof.sh](base/substring.sh)
+[base/substring.sh](base/substring.sh)
 
+#### Loop/laço: while, for e for + ls
+[base/loop.sh](base/loop.sh)
 
 ### Créditos
 * Professor Danilo->([Linkedin](https://www.linkedin.com/in/danilo-aparecido-dos-santos-03101034/)) - Torne-se um programador->[https://www.torneseumprogramador.com.br/](https://www.torneseumprogramador.com.br/)
