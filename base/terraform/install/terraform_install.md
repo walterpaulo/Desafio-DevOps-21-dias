@@ -26,11 +26,3 @@ $ curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo apt-key add -
 ```
 sudo apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main"
 ```
-
-
-### Créditos
-* aws->[https://aws.amazon.com/pt/](https://aws.amazon.com/pt/)
-* Install Terraform->[https://learn.hashicorp.com/tutorials/terraform/install-cli](https://learn.hashicorp.com/tutorials/terraform/install-cli)
-* Professor Danilo->([Linkedin](https://www.linkedin.com/in/danilo-aparecido-dos-santos-03101034/)) - Torne-se um programador->[https://www.torneseumprogramador.com.br/](https://www.torneseumprogramador.com.br/)
-* Terraform->[https://www.terraform.io/](https://www.terraform.io/)
-
