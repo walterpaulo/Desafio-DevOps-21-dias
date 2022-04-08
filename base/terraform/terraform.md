@@ -11,6 +11,11 @@ Acredito que Devops define em: Mudanças, autamatizar processos manuais, mensura
 
 #### Iniciar projeto
 ```
+terraform -v
+```
+
+#### Iniciar projeto
+```
 terraform init
 ```
 
@@ -71,21 +76,6 @@ sudo ./aws/install
 
 ### Terraform [https://www.terraform.io/](https://www.terraform.io/)
 É uma ferramenta pra open-source para criar infraestrutura via código, utiliza linguagem HCL, parecido com arquivos json utilizaremos o provider aws
-
-#### Instalação do TerraForm [https://learn.hashicorp.com/tutorials/terraform/install-cli](https://learn.hashicorp.com/tutorials/terraform/install-cli)
-
-##### Atualiza o repositório de pacotes e instala os pacotes gnupg(chave de criptografica), software-properties-common e curl(comunicacar com a internet)  em ambiente Debian e derivados
-```
-$ sudo apt-get update && sudo apt-get install -y gnupg software-properties-common curl
-```
-
-```
-$ curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo apt-key add -
-```
-
-```
-sudo apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main"
-```
 
 #### Comando para mostrar versão do terraform
 ```
