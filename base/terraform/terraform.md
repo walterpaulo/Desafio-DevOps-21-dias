@@ -24,6 +24,9 @@ terraform apply
 #### Primeiro teste
 [main.tf](example/1/main.tf)
 
+#### Criar 5 arquivos de forma dinâmica diferentes: count
+[main.tf](example/2/main.tf)
+
 ### Terraform [https://www.terraform.io/](https://www.terraform.io/)
 É uma ferramenta pra open-source para criar infraestrutura via código, utiliza linguagem HCL, parecido com arquivos json utilizaremos o provider aws
 
