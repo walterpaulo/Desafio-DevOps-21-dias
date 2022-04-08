@@ -3,13 +3,11 @@
 <hr>
 
 ### Menu
-1. [SHELL SCRIPT](../shellscript/shellscript.md)
+1. SHELL SCRIPT
 2. [TERRAFORM](../terraform/terraform.md)
 3. [REFERÊNCIAS](./../credit/credit.md)
-4. ANEXO A - TERRAFORM
-    * [Instalação](../terraform/install/anexo_A_terraform_install.md)
-5. ANEXO B - AWS
-    * [Instalação](../terraform/install/anexo_B_aws_install.md)
+4. [ANEXO A - TERRAFORM](../terraform/install/anexo_A_terraform_install.md)
+5. [ANEXO B - AWS](../terraform/install/anexo_B_aws_install.md)
 
 ### Comandos([arquivos de shellScript](example/))
 

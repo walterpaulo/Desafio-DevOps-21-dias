@@ -1,15 +1,13 @@
-# Treinamento: Desafio de 21 dias em DevOps
+# [Treinamento: Desafio de 21 dias em DevOps](../../README.md)
 
 ## 3 REFERÊNCIAS
 
 ### Menu
 1. [SHELL SCRIPT](../../base/shellscript/shellscript.md)
 2. [TERRAFORM](../../base/terraform/terraform.md)
-3. [REFERÊNCIAS](./credit.md)
-4. ANEXO A - TERRAFORM
-    * [Instalação](../terraform/install/anexo_A_terraform_install.md)
-5. ANEXO B - AWS
-    * [Instalação](../terraform/install/anexo_B_aws_install.md)
+3. REFERÊNCIAS
+4. [ANEXO A - TERRAFORM](../terraform/install/anexo_A_terraform_install.md)
+5. [ANEXO B - AWS](../terraform/install/anexo_B_aws_install.md)
 
 ### Referências
 * AWS - >[https://aws.amazon.com/pt/](https://aws.amazon.com/pt/)

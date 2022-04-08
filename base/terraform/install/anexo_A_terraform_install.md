@@ -1,4 +1,4 @@
-# [Treinamento: Desafio de 21 dias em DevOps](../../README.md)
+# [Treinamento: Desafio de 21 dias em DevOps](../../../README.md)
 ## 4 ANEXO A - TERRAFORM
 
 ### Menu
@@ -6,9 +6,7 @@
 2. [TERRAFORM](../../terraform/terraform.md)
 3. [REFERÊNCIAS](./../../credit/credit.md)
 4. ANEXO A - TERRAFORM
-    * [Instalação](../../terraform/install/anexo_A_terraform_install.md)
-5. ANEXO B - AWS
-    * [Instalação](../../terraform/install/anexo_B_aws_install.md)
+5. [ANEXO B - AWS](../../terraform/install/anexo_B_aws_install.md)
 
 
 
