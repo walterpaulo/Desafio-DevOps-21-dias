@@ -19,6 +19,11 @@ terraform init
 terraform apply
 ```
 
+#### Mostra o planejamento ...
+```
+terraform plan
+```
+
 ### Example
 
 #### Primeiro teste
@@ -28,7 +33,9 @@ terraform apply
 [main.tf](example/2/main.tf)
 
 #### Criando uma lista de variáveis e atribuindo nomes nos arquivos. Busca por key e value : variable
+[main.tf](example/3/main.tf)
 
+#### Criando uma lista de variáveis e atribuindo nomes nos arquivos. Busca por key e value : for_each
 [main.tf](example/3/main.tf)
 
 ### Terraform [https://www.terraform.io/](https://www.terraform.io/)
