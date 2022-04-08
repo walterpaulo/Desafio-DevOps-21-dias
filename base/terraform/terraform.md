@@ -9,20 +9,48 @@ Acredito que Devops define em: Mudanças, autamatizar processos manuais, mensura
 
 ### Comandos([arquivos do terraform](example))
 
-#### Iniciar o projeto
+#### Iniciar projeto
 ```
 terraform init
 ```
 
-#### Mostrar o que vai fazer o provide, máquina ...
+#### Executar ações, máquina ...
 ```
 terraform apply
 ```
 
-#### Mostra o planejamento ...
+#### *Mostrar planejamento
 ```
 terraform plan
 ```
+
+#### *Destruir vm
+```
+terraform destroy
+```
+
+#### *Acessar console
+```
+aws console
+```
+
+#### Configurar acesso da aws
+```
+aws configure
+```
+* Informar ID;
+* Colocar key;
+* Inserir formato, json.
+
+>   *Válido no diretório do arquivo de extensão .tf
+#### Instalação terraform aws cli (ambiente linux) ...
+```
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+unzip awscliv2.zip
+sudo ./aws/install
+```
+> [Outras plataformas](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
+
 
 ### Example
 
@@ -37,6 +65,9 @@ terraform plan
 
 #### Criando uma lista de variáveis e atribuindo nomes nos arquivos. Busca por key e value : for_each
 [main.tf](example/3/main.tf)
+
+#### Proveder da aws
+[main.tf](example/providers/1/main.tf)
 
 ### Terraform [https://www.terraform.io/](https://www.terraform.io/)
 É uma ferramenta pra open-source para criar infraestrutura via código, utiliza linguagem HCL, parecido com arquivos json utilizaremos o provider aws
