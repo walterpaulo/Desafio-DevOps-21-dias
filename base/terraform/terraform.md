@@ -1,11 +1,16 @@
 # [Treinamento: Desafio de 21 dias em DevOps](../../README.md)
-> Terraform
+## 2 TERRAFORM
 <hr>
 Acredito que Devops define em: Mudanças, autamatizar processos manuais, mensurar resultados e compartilhar conhecimento.
 
 ### Menu
-1. [Shell script](../shellscript/shellscript.md)
-2. [Terraform](#)
+1. [SHELL SCRIPT](../shellscript/shellscript.md)
+2. [TERRAFORM](../terraform/terraform.md)
+3. [REFERÊNCIAS](./../credit/credit.md)
+4. ANEXO A - TERRAFORM
+    * [Instalação](../terraform/install/anexo_A_terraform_install.md)
+5. ANEXO B - AWS
+    * [Instalação](../terraform/install/anexo_B_aws_install.md)
 
 ### Comandos([arquivos do terraform](example))
 
@@ -48,13 +53,6 @@ aws configure
 * Inserir formato, json.
 
 >   *Válido no diretório do arquivo de extensão .tf
-#### Instalação terraform aws cli (ambiente linux) ...
-```
-curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
-unzip awscliv2.zip
-sudo ./aws/install
-```
-> [Outras plataformas](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
 
 
 ### Example
