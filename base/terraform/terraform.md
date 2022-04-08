@@ -70,14 +70,3 @@ aws configure
 #### Proveder da aws
 [main.tf](example/providers/1/main.tf)
 
-### Terraform [https://www.terraform.io/](https://www.terraform.io/)
-É uma ferramenta pra open-source para criar infraestrutura via código, utiliza linguagem HCL, parecido com arquivos json utilizaremos o provider aws
-
-#### Comando para mostrar versão do terraform
-```
-terraform -v
-```
-
-### Créditos
-* Professor Danilo->([Linkedin](https://www.linkedin.com/in/danilo-aparecido-dos-santos-03101034/)) - Torne-se um programador->[https://www.torneseumprogramador.com.br/](https://www.torneseumprogramador.com.br/)
-

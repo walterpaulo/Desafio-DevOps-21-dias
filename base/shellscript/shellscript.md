@@ -9,7 +9,7 @@
 4. [ANEXO A - TERRAFORM](../terraform/install/anexo_A_terraform_install.md)
 5. [ANEXO B - AWS](../terraform/install/anexo_B_aws_install.md)
 
-### Comandos([arquivos de shellScript](example/))
+### Comandos
 
 #### Listar conteúdo do diretório(permissões e arquivos oculto), ls -la
 [base/listar-dados-diretorio.sh](example/listar-dados-diretorio.sh)
@@ -49,6 +49,4 @@
 #### Loop/laço: while, for e for + ls
 [base/loop.sh](example/loop.sh)
 
-### Créditos
-* Professor Danilo->([Linkedin](https://www.linkedin.com/in/danilo-aparecido-dos-santos-03101034/)) - Torne-se um programador->[https://www.torneseumprogramador.com.br/](https://www.torneseumprogramador.com.br/)
 
