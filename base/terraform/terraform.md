@@ -99,8 +99,9 @@ A key ami recebe o comando acima.
 ami           = data.aws_ami.ubuntu.id
 ...
 ```
-
-
 [main.tf](example/providers/4-data/main.tf)
+
+#### *Data: consultar api viacep,  
+[main.tf](example/providers/4-data/api/main.tf)
 
 >   *Válido no diretório do arquivo de extensão .tf
