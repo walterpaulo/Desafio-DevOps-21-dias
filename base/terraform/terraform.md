@@ -78,12 +78,29 @@ aws configure
 [main.tf](example/providers/1/main.tf)
 
 
-#### Gerar par de chave e 
+#### Gerar par de chave 
 ```
 ssh-keygen
 ```
-Pega o conteúdo
+
+#### *Criar security group, vms 
+
+<!-- Pega o conteúdo -->
 [main.tf](example/providers/3/main.tf)
 
+#### *Pegar o id de image dinamicamente
+acessar o console
+```
+data.aws_ami.ubuntu.id
+```
+A key ami recebe o comando acima.
+```
+...
+ami           = data.aws_ami.ubuntu.id
+...
+```
+
+
+[main.tf](example/providers/4-data/main.tf)
 
 >   *Válido no diretório do arquivo de extensão .tf
