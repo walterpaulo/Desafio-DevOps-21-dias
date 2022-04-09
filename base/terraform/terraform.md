@@ -50,9 +50,6 @@ aws configure
 * Colocar key;
 * Inserir formato, json.
 
->   *Válido no diretório do arquivo de extensão .tf
-
-
 ### Example
 
 #### Primeiro teste
@@ -70,3 +67,4 @@ aws configure
 #### Proveder da aws
 [main.tf](example/providers/1/main.tf)
 
+>   *Válido no diretório do arquivo de extensão .tf
