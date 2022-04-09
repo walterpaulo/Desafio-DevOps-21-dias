@@ -42,6 +42,16 @@ terraform destroy
 aws console
 ```
 
+#### *Ver ip- entra na modo console
+```
+aws_instance.vm.public_ip
+```
+
+#### *Atualiza innformações locais, arquivo terraform.tfstate.
+```
+terraform refresh
+```
+
 #### Configurar acesso da aws
 ```
 aws configure
@@ -66,5 +76,14 @@ aws configure
 
 #### Proveder da aws
 [main.tf](example/providers/1/main.tf)
+
+
+#### Gerar par de chave e 
+```
+ssh-keygen
+```
+Pega o conteúdo
+[main.tf](example/providers/3/main.tf)
+
 
 >   *Válido no diretório do arquivo de extensão .tf
