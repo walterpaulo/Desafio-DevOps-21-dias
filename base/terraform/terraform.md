@@ -135,4 +135,7 @@ data.http.api_viacep.body
 #### Lista de objeto estruturado: object 
 [main.tf](example/6-output/6/main.tf)
 
+#### Solicitando valor de campo(senha): sensitive
+[main.tf](example/6-output/7/main.tf)
+
 >   *Válido no diretório do arquivo de extensão .tf
