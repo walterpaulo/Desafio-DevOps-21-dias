@@ -141,6 +141,17 @@ data.http.api_viacep.body
 #### Captura de variáveis de ambiente: aux. Shell script
 as variáveis do terraform começam com TF_VAR_***
 [main.tf](example/6-output/8/main.tf)
+[exec.sh](example/6-output/8/exec.sh)
+
+#### Captura de variáveis de ambiente: aux. file.tfvars
+
+```
+# file.tfvars
+nome="walter"
+idade=33
+casado=true
+```
+[main.tf](example/6-output/9/main.tf)
 
 
 
