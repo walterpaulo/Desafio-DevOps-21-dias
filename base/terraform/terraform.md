@@ -114,4 +114,11 @@ data.http.api_viacep.body
 #### Solicita variáveis: nome, idade e true ou false para casado
 [main.tf](example/5-variaveis/2/main.tf)
 
+#### Solicita variáveis de output(terminal): nome, idade e true ou false para casado 
+[main.tf](example/6-output/1/main.tf)
+
+
+#### Pegar um item do array: output 
+[main.tf](example/6-output/2/main.tf)
+
 >   *Válido no diretório do arquivo de extensão .tf
