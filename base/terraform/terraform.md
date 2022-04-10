@@ -111,4 +111,7 @@ data.http.api_viacep.body
 #### Solicitar nome de variável
 [main.tf](example/5-variaveis/1/main.tf)
 
+#### Solicita variáveis: nome, idade e true ou false para casado
+[main.tf](example/5-variaveis/2/main.tf)
+
 >   *Válido no diretório do arquivo de extensão .tf
