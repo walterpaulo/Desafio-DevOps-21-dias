@@ -108,4 +108,7 @@ data.http.api_viacep.body
 ```
 [main.tf](example/providers/4-data/api/main.tf)
 
+#### Solicitar nome de variável
+[main.tf](example/5-variaveis/1/main.tf)
+
 >   *Válido no diretório do arquivo de extensão .tf
