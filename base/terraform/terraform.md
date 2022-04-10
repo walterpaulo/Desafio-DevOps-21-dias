@@ -121,4 +121,7 @@ data.http.api_viacep.body
 #### Pegar um item do array: output 
 [main.tf](example/6-output/2/main.tf)
 
+
+#### Lista todos itens do array: output 
+[main.tf](example/6-output/3/main.tf)
 >   *Válido no diretório do arquivo de extensão .tf
