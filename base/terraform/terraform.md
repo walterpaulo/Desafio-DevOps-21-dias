@@ -132,4 +132,7 @@ data.http.api_viacep.body
 #### Lista de objeto: map 
 [main.tf](example/6-output/5/main.tf)
 
+#### Lista de objeto estruturado: object 
+[main.tf](example/6-output/6/main.tf)
+
 >   *Válido no diretório do arquivo de extensão .tf
