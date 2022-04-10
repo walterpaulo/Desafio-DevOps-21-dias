@@ -124,4 +124,9 @@ data.http.api_viacep.body
 
 #### Lista todos itens do array: output 
 [main.tf](example/6-output/3/main.tf)
+
+
+#### Lista de valores definidos: map 
+[main.tf](example/6-output/4/main.tf)
+
 >   *Válido no diretório do arquivo de extensão .tf
