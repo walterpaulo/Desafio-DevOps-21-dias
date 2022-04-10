@@ -138,4 +138,10 @@ data.http.api_viacep.body
 #### Solicitando valor de campo(senha): sensitive
 [main.tf](example/6-output/7/main.tf)
 
+#### Captura de variáveis de ambiente: aux. Shell script
+as variáveis do terraform começam com TF_VAR_***
+[main.tf](example/6-output/8/main.tf)
+
+
+
 >   *Válido no diretório do arquivo de extensão .tf
