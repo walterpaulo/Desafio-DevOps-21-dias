@@ -101,7 +101,11 @@ ami           = data.aws_ami.ubuntu.id
 ```
 [main.tf](example/providers/4-data/main.tf)
 
-#### *Data: consultar api viacep,  
+#### *Data: consultar api viacep,
+No console, digete este comando para obter o corpo da mensagem,cep, logradouro comprementos, bairro, localidade ...
+```
+data.http.api_viacep.body
+```
 [main.tf](example/providers/4-data/api/main.tf)
 
 >   *Válido no diretório do arquivo de extensão .tf
