@@ -153,6 +153,9 @@ casado=true
 ```
 [main.tf](example/6-output/9/main.tf)
 
+#### Validações: validation, condition and error_message
+Colocar .(ponto final) no final da mensagem de error_message 
+[main.tf](example/6-output/10/main.tf)
 
 
 >   *Válido no diretório do arquivo de extensão .tf
