@@ -160,12 +160,12 @@ Colocar .(ponto final) no final da mensagem de error_message
 
 ## Exercício 1
 
-> Criar 3 vm´s na aws: 
-[região (main.tf), ](example/7-exercicio/1/main.tf)
-[pegar image atual (data.tf),  ](example/7-exercicio/1/data.tf)
-[gera os links de acesso (out.tf),  ](example/7-exercicio/1/out.tf)
-[cria o security group (sg.tf),  ](example/7-exercicio/1/sg.tf)
-[pega valor do cliente (vars.tf),  ](example/7-exercicio/1/vars.tf)
-[cria as vm´s (vms.tf).  ](example/7-exercicio/1/vms.tf)
+> Criar 4 vm´s na aws: 
+região [main.tf](example/7-exercicio/1/main.tf),
+pegar image atual [data.tf](example/7-exercicio/1/data.tf),
+gera os links de acesso [out.tf](example/7-exercicio/1/out.tf),
+cria o security group [sg.tf](example/7-exercicio/1/sg.tf),
+pega valor do cliente [vars.tf](example/7-exercicio/1/vars.tf),
+cria as vm´s [vms.tf](example/7-exercicio/1/vms.tf).
 
 >   *Válido no diretório do arquivo de extensão .tf
