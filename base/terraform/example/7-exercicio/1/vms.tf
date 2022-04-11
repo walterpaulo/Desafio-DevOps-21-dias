@@ -1,6 +1,6 @@
 resource "aws_instance" "vm" {
   for_each      = var.nomes
-  ami           =  "ami-04505e74c0741db8d"    #data.aws_ami.ubuntu.id
+  ami           =  data.aws_ami.ubuntu.id #"image "ami-04505e74c0741db8d" da região "us-east-1"
   instance_type = var.instance_type
   key_name      = aws_key_pair.chave_ssh_desafio.key_name
   vpc_security_group_ids = [
