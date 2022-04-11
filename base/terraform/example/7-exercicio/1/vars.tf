@@ -11,7 +11,5 @@ variable "nomes" {
 
 variable "instance_type" {
   type        = string
-  description = "O tipo de VM para criação: t2.micro"
-
-
+  description = "O tipo de VM para criação: Ex: (t2.micro)"
 }
