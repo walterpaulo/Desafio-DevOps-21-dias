@@ -17,12 +17,12 @@ Acredito que Devops define em: Mudanças, autamatizar processos manuais, mensura
 terraform -v
 ```
 
-> Iniciar projeto
+> Inicia projeto, ponto de partida
 ```
 terraform init
 ```
 
-> Executar ações, máquina ...
+> Executa as ações propostas num plano
 ```
 terraform apply
 ```
@@ -32,7 +32,7 @@ terraform apply
 terraform plan
 ```
 
-> *Destruir vm
+> *Destrói todos os objetos
 ```
 terraform destroy
 ```
