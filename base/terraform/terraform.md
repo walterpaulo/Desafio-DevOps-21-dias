@@ -160,8 +160,8 @@ Colocar .(ponto final) no final da mensagem de error_message
 
 ## Rede
 
-> Cria rede: cidr_block (bloco de ip/v4), enable_dns_hostnames (habilita dns) e tag (nome da rede) 
-[main.tf](example/8-vpc/1/main.tf)
+> Cria rede: cidr_block (bloco de ip/v4), enable_dns_hostnames (habilita dns) e tag (nome da rede). Região 
+[main.tf](example/8-vpc/1/main.tf), rede [vpc.tf](example/8-vpc/1/vpc.tf), sub-rede [vpc.tf](example/8-vpc/1/vpc.tf).
 
 
 ## Exercício 1
