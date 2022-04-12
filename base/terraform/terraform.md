@@ -158,10 +158,15 @@ Colocar .(ponto final) no final da mensagem de error_message
 [main.tf](example/6-output/10/1/main.tf) e
 [siglas.tf](example/6-output/10/1/sigla.tf)
 
-## Rede
+## Rede (VPC)
 
-> Cria rede e subnet: cidr_block (bloco de ip/v4), enable_dns_hostnames (habilita dns) e tag (nome da rede). Região 
-[main.tf](example/8-vpc/1/main.tf), rede [vpc.tf](example/8-vpc/1/vpc.tf), sub-rede [vpc.tf](example/8-vpc/1/vpc.tf), [subnets.tf](example/8-vpc/1/subnets.tf).
+> Cria rede e subnet: cidr_block (bloco de ip/v4), enable_dns_hostnames (habilita dns) e tag (nome da rede)... 
+* "region", região [main.tf](example/8-vpc/1/main.tf); 
+* "vpc", rede [vpc.tf](example/8-vpc/1/vpc.tf); 
+* "subnets", sub-rede: a1, b2 e c3 [subnets.tf](example/8-vpc/1/subnets.tf);
+* "internet gateways", rota para internet [ig.tf](example/8-vpc/1/ig.tf)
+* "route tables", tabela de rota [rt.tf](example/8-vpc/1/rt.tf);e
+* "subnet assciations", associação entre sub-net e rota [rt_association.tf](example/8-vpc/1/rt_association.tf).
 
 
 ## Exercício 1
