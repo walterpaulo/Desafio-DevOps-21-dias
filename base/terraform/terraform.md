@@ -158,6 +158,12 @@ Colocar .(ponto final) no final da mensagem de error_message
 [main.tf](example/6-output/10/1/main.tf) e
 [siglas.tf](example/6-output/10/1/sigla.tf)
 
+## Rede
+
+> Cria rede: cidr_block (bloco de ip/v4), enable_dns_hostnames (habilita dns) e tag (nome da rede) 
+[main.tf](example/8-vpc/1/main.tf)
+
+
 ## Exercício 1
 
 > Criar 4 vm´s na aws: 
