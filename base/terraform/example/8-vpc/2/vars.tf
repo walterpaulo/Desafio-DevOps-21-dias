@@ -3,15 +3,15 @@ variable "nomes" {
   default = [
     {
       "nome"   = "Primeira"
-      "subent" = "subnet_a1",
+      "subnet" = "subnet_a1",
     },
     {
       "nome"   = "Segunda"
-      "subent" = "subnet_b1",
+      "subnet" = "subnet_b1",
     },
     {
       "nome"   = "Terceira"
-      "subent" = "subnet_c1",
+      "subnet" = "subnet_c1",
     }
   ]
 }
