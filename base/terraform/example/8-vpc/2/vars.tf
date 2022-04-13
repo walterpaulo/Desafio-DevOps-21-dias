@@ -24,11 +24,11 @@ variable "subnets" {
       "cdir" = "10.0.64.0/18"
     },
     "subnet_b1" = {
-      "zona" = "us-east-ba",
+      "zona" = "us-east-1b",
       "cdir" = "10.0.128.0/18"
     },
     "subnet_c1" = {
-      "zona" = "us-east-ca",
+      "zona" = "us-east-1c",
       "cdir" = "10.0.192.0/18"
 
     }
