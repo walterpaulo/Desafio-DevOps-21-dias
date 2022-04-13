@@ -17,17 +17,17 @@ variable "nomes" {
 }
 
 variable "subnets" {
-  type = list
+  type = map(any)
   default = {
-    subnet_a1 = {
+    "subnet_a1" = {
       "zona" = "us-east-1a",
       "cdir" = "10.0.64.0/18"
     },
-    subnet_b1 = {
+    "subnet_b1" = {
       "zona" = "us-east-ba",
       "cdir" = "10.0.128.0/18"
     },
-    subnet_c1 = {
+    "subnet_c1" = {
       "zona" = "us-east-ca",
       "cdir" = "10.0.192.0/18"
 
