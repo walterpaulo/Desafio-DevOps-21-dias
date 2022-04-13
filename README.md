@@ -10,6 +10,10 @@ Acredito que Devops define em: Mudanças, autamatizar processos manuais, mensura
 4. [ANEXO A - TERRAFORM](./base/terraform/install/anexo_A_terraform_install.md)
 5. [ANEXO B - AWS](./base/terraform/install/anexo_B_aws_install.md)
 
+### Exemplo
+
+![terraform + aws](./assets/images/terraform-aws.jpg)
+
 ### Importânte
 * Diretório Shell script, [abrir?](base/shellscript/example/);
 
