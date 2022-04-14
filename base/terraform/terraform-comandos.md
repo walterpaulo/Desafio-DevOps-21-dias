@@ -30,10 +30,16 @@ terraform plan
 terraform destroy
 ```
 
+> *Mostra saída do último "apply"
+```
+terraform show
+```
+
 > *Acessar console
 ```
 aws console
 ```
+
 
 > *Ver ip- entra na modo console
 ```
