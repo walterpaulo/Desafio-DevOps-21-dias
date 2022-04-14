@@ -111,6 +111,8 @@ Colocar .(ponto final) no final da mensagem de error_message
 * "subnet assciations", associação entre sub-net e rota [rt_association.tf](example/8-vpc/1/rt_association.tf).
 
 
+## Rede (VPC) e vm´s(EC2)
+
 ## Exercício 1
 
 > Criar 4 vm´s na aws: 
