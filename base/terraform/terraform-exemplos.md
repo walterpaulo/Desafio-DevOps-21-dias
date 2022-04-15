@@ -113,6 +113,9 @@ Colocar .(ponto final) no final da mensagem de error_message
 
 ## Rede (VPC) e vm´s(EC2)
 
+## Reaproveitamento de código: módulo/ module  
+
+
 ## Exercício 1
 
 > Criar 4 vm´s na aws: 
