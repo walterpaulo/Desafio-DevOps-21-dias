@@ -19,6 +19,9 @@ Acredito que Devops define em: Mudanças, autamatizar processos manuais, mensura
 <a href="./base/terraform/example/9-modulos/1">
     <img src="./assets/images/Module-terraform-aws.jpg" targer="_blank" alt="Módulo, reaproveitando códigos" width="300" height="auto"/>
 </a>
+<a href="./base/terraform/example/10-outros-resources/1/">
+    <img src="./assets/images/Rds-terraform-aws.jpg" targer="_blank" alt="Banco de Dados Relacional(RDS)" width="300" height="auto"/>
+</a>
 
 ### Importânte
 * Diretório Shell script, [abrir?](base/shellscript/example/);
