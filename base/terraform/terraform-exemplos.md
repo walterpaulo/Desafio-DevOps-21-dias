@@ -115,6 +115,8 @@ Colocar .(ponto final) no final da mensagem de error_message
 
 ## Reaproveitamento de código: módulo/ module  
 
+## Relational Database Service (RDS)
+ > Arquivos necessários -> [rds](./example/10-outros-resources/1/rds.tf), [main](./example/10-outros-resources/1/main.tf) [sg.tf](./example/10-outros-resources/1/sg.tf)
 
 ## Exercício 1
 
