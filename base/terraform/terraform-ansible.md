@@ -5,7 +5,7 @@
 
  |               | Ansible       | Terraform       | Puppet     |
  | ------------- | ------------- | :-------------- | --------   |
- | Extensão      |               | .tf             | .pp        |
+ | Extensão      | .yml          | .tf             | .pp        |
 
 
  > Instalação (para Ubuntu)
@@ -17,3 +17,12 @@ sudo add-apt-repository --yes --update ppa:ansible/ansible
 sudo apt install ansible
 ```
 
+### Tag
+
+> host -> trabalhar com host específico;
+
+> tasks -> tarefas
+
+- name: "nome da máquina"
+- shell: hostname "maquina-ansible" && echo "maquina-ansible" > /etc/hostname
+become: yes # todo script sudo como sudo
