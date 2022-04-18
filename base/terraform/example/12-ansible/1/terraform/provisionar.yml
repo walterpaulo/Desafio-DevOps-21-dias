@@ -1,0 +1,5 @@
+- hosts:
+  - maquina-ansible
+
+tarefas utiliza
+# tasks: 

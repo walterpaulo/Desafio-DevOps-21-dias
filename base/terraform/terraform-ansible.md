@@ -26,3 +26,6 @@ sudo apt install ansible
 - name: "nome da máquina"
 - shell: hostname "maquina-ansible" && echo "maquina-ansible" > /etc/hostname
 become: yes # todo script sudo como sudo
+
+
+ ansible-playbook -i hosts provisionar.yml -u ubuntu --private-key $HOME/Desafio-DevOps-21-dias/base/terraform/example/providers/ssh/id_rsa
