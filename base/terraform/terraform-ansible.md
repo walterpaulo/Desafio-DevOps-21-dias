@@ -28,4 +28,4 @@ sudo apt install ansible
 become: yes # todo script sudo como sudo
 
 
- ansible-playbook -i hosts provisionar.yml -u ubuntu --private-key $HOME/Desafio-DevOps-21-dias/base/terraform/example/providers/ssh/id_rsa
+ ansible -i hosts provisionar.yml -u ubuntu --private-key $HOME/Desafio-DevOps-21-dias/base/terraform/example/providers/ssh/id_rsa
