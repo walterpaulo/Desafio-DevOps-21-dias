@@ -10,6 +10,7 @@
 5. [ANEXO B - AWS](../terraform/install/anexo_B_aws_install.md)
 
 ### Referências
+* Ansible - >[https://docs.ansible.com/ansible/latest/user_guide/index.html](https://docs.ansible.com/ansible/latest/user_guide/index.html)
 * AWS - >[https://aws.amazon.com/pt/](https://aws.amazon.com/pt/)
 * AWS CLI (Installing or updating) ->[https://aws.amazon.com/pt/](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
 * Calculadora de rede para IPV4 ->[https://www.site24x7.com/pt/tools/ipv4-sub-rede-calculadora.html](https://www.site24x7.com/pt/tools/ipv4-sub-rede-calculadora.html)
