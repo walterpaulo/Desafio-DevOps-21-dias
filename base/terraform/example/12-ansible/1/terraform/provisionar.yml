@@ -5,3 +5,12 @@
       shell: hostname "maquina-ansible" && echo "maquina-ansible" > /etc/hostname
       become: yes # roda como sudo
 
+    - name: "Criando um arquivo mantendo o estado" #segunda tarefa;
+      copy: 
+        content: "teste Walter Paulo" #v valor do conteúdo; 
+        dest: "/home/ubuntu/mais_um_arquivo_com_estado.txt" # caminho do arquivo de destino;
+        backup: yes
+        owner: ubuntu #dono do arquivo
+        group: ubuntu #dono do grupo
+        mode: 400 # Tipo de permissão, arquivo somente dono pode executar e leitura;
+

@@ -8,13 +8,19 @@
  | Extensão      | .yml          | .tf             | .pp        |
 
 
- > Instalação (para Ubuntu)
+### Instalação (para Ubuntu)
 
  ```
 sudo apt update
 sudo apt install software-properties-common
 sudo add-apt-repository --yes --update ppa:ansible/ansible
 sudo apt install ansible
+```
+
+### Comandos
+> Validar síntaxe do ansible 
+```
+ansible-playbook [provisionar.yml](./example/12-ansible/1/terraform/provisionar.yml) --syntax-check
 ```
 
 ### Tag
@@ -24,7 +30,7 @@ sudo apt install ansible
 - hosts:
   - maquina-ansible
   ```
-  O "maquina-ansible" é uma variável e para ser validada precisa está entre chaves. Neste [exemplo](./example/12-ansible/exc.sh) o camando echo retorna a saída na tela de duas variáveis, maquina-ansible tipo ansible e $DNS Shell script. O maior que (>) envia o retorno mostrada na tela para variável hosts, tipo Shell script.  
+  O "maquina-ansible" é uma variável e para ser validada precisa está entre chaves. No próximo exemplo define como atribui as variáveis, [exemplo](./example/12-ansible/exc.sh), o camando echo retorna a saída na tela de duas variáveis, maquina-ansible tipo ansible e $DNS Shell script. O maior que (>) envia o retorno mostrada na tela para variável hosts, tipo Shell script.
   ```
   echo "
 [maquina-ansible]
