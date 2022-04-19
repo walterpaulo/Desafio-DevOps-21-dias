@@ -22,6 +22,9 @@ sudo apt install ansible
 ```
 ansible-playbook [provisionar.yml](./example/12-ansible/1/terraform/provisionar.yml) --syntax-check
 ```
+### Exemplo
+
+> Instalando Wordpress: [diretório](./example/13-implantacao-wordpress/)
 
 ### Tag
 
