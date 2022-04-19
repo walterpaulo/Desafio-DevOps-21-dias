@@ -20,12 +20,38 @@ sudo apt install ansible
 ### Tag
 
 > host -> trabalhar com host específico;
+```
+- hosts:
+  - maquina-ansible
+  ```
+  O "maquina-ansible" é uma variável e para ser validada precisa está entre chaves. Neste [exemplo](./example/12-ansible/exc.sh) o camando echo retorna a saída na tela de duas variáveis, maquina-ansible tipo ansible e $DNS Shell script. O maior que (>) envia o retorno mostrada na tela para variável hosts, tipo Shell script.  
+  ```
+  echo "
+[maquina-ansible]
+$DNS
+" > hosts
+```
 
-> tasks -> tarefas
+> tasks -> é uma tarefa
+    
+* -name: "Nome do host"
+* shell: "Aqui informa o comando para ser executado"
+* become: yes # rodo como sudo, super usuário
 
-- name: "nome da máquina"
-- shell: hostname "maquina-ansible" && echo "maquina-ansible" > /etc/hostname
-become: yes # todo script sudo como sudo
+Exemplo:
+```
+- hosts:
+  - maquina-ansible
+- name: "Criando arquivo"
+    shell: echo "testando criação" >> teste.txt
 
+- name: "Criando um arquivo mantendo o estado" #segunda tarefa;
+    copy: 
+    content: "teste Walter Paulo" #v valor do conteúdo; 
+    dest: "/home/ubuntu/mais_um_arquivo_com_estado.txt" # caminho do arquivo de destino;
+    backup: yes
+    owner: ubuntu #dono do arquivo
+    group: ubuntu #dono do grupo
+    mode: 400 # Tipo de permissão, arquivo somente dono pode executar e leitura;
 
- ansible -i hosts provisionar.yml -u ubuntu --private-key $HOME/Desafio-DevOps-21-dias/base/terraform/example/providers/ssh/id_rsa
+ ```
