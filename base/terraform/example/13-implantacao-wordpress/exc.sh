@@ -21,5 +21,5 @@ echo "
 $DNS
 " > hosts
 
-ANSIBLE_HOST_KEY_CHECKING=False ansible-playbook -i hosts provisionar.yml -u ubuntu --private-key ../../providers/ssh/id_rsa
-ssh -i ../../providers/ssh/id_rsa ubuntu@$DNS -o ServerAliveInterval=60
+ANSIBLE_HOST_KEY_CHECKING=False ansible-playbook -i hosts terraform/provisionar.yml -u ubuntu --private-key ../../providers/ssh/id_rsa
+# ssh -i ../../providers/ssh/id_rsa ubuntu@$DNS -o ServerAliveInterval=60
