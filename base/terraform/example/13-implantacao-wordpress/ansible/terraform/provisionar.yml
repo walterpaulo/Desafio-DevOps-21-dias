@@ -19,16 +19,17 @@
       apt:
         name: "{{ item }}"
         state: latest
-        with_tems:
-          - php7.4
-          - apache2
-          - libapache2-mod-php7.4
-          - php-mysql
-          - php-curl
-          - mysql-server
-          - python3-pycurl
-          - python3-mysqldb
-          - unzip
+      become: yes
+      with_items:
+        - php7.4
+        - apache2
+        - libapache2-mod-php7.4
+        - php-mysql
+        - php-curl
+        - mysql-server
+        - python3-pycurl
+        - python3-mysqldb
+        - unzip
 
     - name: "Fazendo download do wordpress"
       get_url:
