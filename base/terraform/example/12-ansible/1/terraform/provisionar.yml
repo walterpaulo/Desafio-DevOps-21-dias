@@ -1,5 +1,7 @@
 - hosts:
   - maquina-ansible
+  tasks:
+    - name: "Renomar maquina"
+      shell: hostname "maquina-ansible" && echo "maquina-ansible" > /etc/hostname
+      become: yes # roda como sudo
 
-tarefas utiliza
-# tasks: 
