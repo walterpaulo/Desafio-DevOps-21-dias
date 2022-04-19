@@ -1,0 +1,75 @@
+- hosts:
+  - wordpress
+  # handlers:
+  #   - name: "restart apache"
+  #     service:
+
+  tasks:
+    - name: "Renomar maquina"
+      shell: hostname "wordpress" && echo "wordpress" > /etc/hostname
+      become: yes # roda como sudo
+
+    - name: "Roda: sudo apt update"
+      become: yes # roda como sudo
+      apt:
+        upgrade: yes
+        update_cache: yes
+
+     - name: "Instalar em lote"
+       apt:
+        name: "{{ item }}"
+        state: latest
+        with_tems:
+          - php7.4
+          - apache2
+          - libapache2-mod-php7.4
+          - php-mysql
+          - php-curl
+          - mysql-server
+          - python3-pycurl
+          - unzip
+
+      - name: "Fazendo download do wordpress"
+         get_url:
+          url: "https://br.owrdpress.org/lastest-pt_BR.zip"
+          dest: "/tmp/lastest-pt_BR.zip"
+        
+      - name: "Fazendo descompactação do wordpress"
+         unarchive:
+          url: "/tmp/lastest-pt_BR.zip"
+          dest: "/var/www"
+          remote_scr: yes
+
+      - name: "Copiar arquivo do wordpress"
+         copy:
+          src: "/tmp/lastest-pt_BR.zip"
+          dest: "/var/www/wordpress/wp-config.php"
+          remote_scr: yes
+        become: yes
+
+      - name: "configurar senha"
+         replace:
+          path: "/var/www/wordpress/wp-config.php"
+          regexp: "{{ item.value }}"
+        with_items:
+          - { regex: 'n'}
+        become: yes
+
+
+        ##
+
+      #   # Criar senha do root mysql
+      # - name: "Criando senha root mysql"
+      #     ignore_errors: yes
+      #     become: yes
+      #     mysql_user:
+      #       name: root
+      #       host: localhost
+      #       password: root
+      #       priv: "*.*:ALL,GRANT"
+      #       state: present
+
+      # - shell: cat /var/www/
+
+
+
