@@ -7,8 +7,8 @@
 
     - name: "Criando um arquivo mantendo o estado" #segunda tarefa;
       copy: 
-        content: "teste Walter Paulo" #v valor do conteúdo; 
-        dest: "/home/ubuntu/mais_um_arquivo_com_estado.txt" # caminho do arquivo de destino;
+        content: "Devps 2021" #v valor do conteúdo; 
+        dest: "/home/ubuntu/exemplo-2.txt" # caminho do arquivo de destino;
         backup: yes
         owner: ubuntu #dono do arquivo
         group: ubuntu #dono do grupo

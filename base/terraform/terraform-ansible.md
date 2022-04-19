@@ -61,3 +61,9 @@ Exemplo:
     mode: 400 # Tipo de permissão, arquivo somente dono pode executar e leitura;
 
  ```
+
+Vídeo: Ansible + Terraform + Aws: adicionando arquivo
+
+<a href="https://youtu.be/ez1zt6fp0qY">
+  <img src="https://img.youtube.com/vi/ez1zt6fp0qY/0.jpg" alt="Adicionando arquivo" width="300" height="auto"/> 
+</a>
