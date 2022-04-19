@@ -15,8 +15,8 @@
         upgrade: yes
         update_cache: yes
 
-     - name: "Instalar em lote"
-       apt:
+    - name: "Instalar em lote"
+      apt:
         name: "{{ item }}"
         state: latest
         with_tems:
@@ -29,31 +29,31 @@
           - python3-pycurl
           - unzip
 
-      - name: "Fazendo download do wordpress"
-         get_url:
-          url: "https://br.owrdpress.org/lastest-pt_BR.zip"
-          dest: "/tmp/lastest-pt_BR.zip"
-        
-      - name: "Fazendo descompactação do wordpress"
-         unarchive:
-          url: "/tmp/lastest-pt_BR.zip"
-          dest: "/var/www"
-          remote_scr: yes
+    - name: "Fazendo download do wordpress"
+      get_url:
+        url: "https://br.owrdpress.org/lastest-pt_BR.zip"
+        dest: "/tmp/lastest-pt_BR.zip"
+      
+    - name: "Fazendo descompactação do wordpress"
+      unarchive:
+        url: "/tmp/lastest-pt_BR.zip"
+        dest: "/var/www"
+        remote_scr: yes
 
-      - name: "Copiar arquivo do wordpress"
-         copy:
-          src: "/tmp/lastest-pt_BR.zip"
-          dest: "/var/www/wordpress/wp-config.php"
-          remote_scr: yes
-        become: yes
+    - name: "Copiar arquivo do wordpress"
+      copy:
+        src: "/tmp/lastest-pt_BR.zip"
+        dest: "/var/www/wordpress/wp-config.php"
+        remote_scr: yes
+      become: yes
 
-      - name: "configurar senha"
-         replace:
-          path: "/var/www/wordpress/wp-config.php"
-          regexp: "{{ item.value }}"
-        with_items:
-          - { regex: 'n'}
-        become: yes
+    - name: "configurar senha"
+      replace:
+        path: "/var/www/wordpress/wp-config.php"
+        regexp: "{{ item.value }}"
+      with_items:
+        - { regex: 'n'}
+      become: yes
 
 
         ##

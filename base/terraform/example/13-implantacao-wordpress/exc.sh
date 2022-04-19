@@ -17,7 +17,7 @@ DNS=$(echo $DNS | sed -e "s/\"//g")
 cd ../ansible
 
 echo "
-[maquina-ansible]
+[wordpress]
 $DNS
 " > hosts
 
