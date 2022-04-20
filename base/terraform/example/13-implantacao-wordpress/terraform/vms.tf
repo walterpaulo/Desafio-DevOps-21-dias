@@ -8,7 +8,7 @@ resource "aws_instance" "vm" {
   ]
 
   tags = {
-    Name = "MinhaPrimeiraMaquina-${count.index}"
+    Name = "Wordpress-${count.index}"
   }
 }
 
