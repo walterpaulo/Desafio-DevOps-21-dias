@@ -1,87 +1,68 @@
 - hosts:
   - wordpress
-  # handlers:
-  #   - name: "restart apache"
-  #     service:
+  handlers:
+    - name: Restart apache
+      service:
+        name: apache2
+        state: restarted
+      become: yes
 
   tasks:
     - name: "Renomear maquina"
       shell: hostname "wordpress" && echo "wordpress" > /etc/hostname
       become: yes # roda como sudo
-
-    # - name: "Roda: sudo apt update"
-    #   become: yes # roda como sudo
-    #   apt:
-    #     upgrade: yes
-    #     update_cache: yes
-    #     cache_valid_time: 86400 #Um dia
     
-    - name: "Update all packages to their latest version"
+    - name: "Atualizando pacotes"
       become: yes
-      apt:
+      apt:  
         name: "*"
         state: latest 
         update_cache: yes
+        cache_valid_time: 3600
 
-    # - name: "Instala pacotes em lote"
-    #   apt:
-    #     name: "{{ item }}"
-    #     state: latest
-    #     become: yes # roda com sudo
-    #   with_items:
-    #     - php7.4
-    #     - apache2
-    #     - libapache2-mod-php7.4
-    #     - php-mysql
-    #     - php-curl
-    #     - mysql-server
-    #     - python3-pycurl
-    #     - python3-mysqldb
-    #     - unzip
-
-    - name: "Instala pacote em lote"
-      become: yes # roda com sudo
+    - name: "Instalando pacotes em lote"
+      become: yes
       apt:
         pkg:
           - php7.4 
           - apache2 
           - libapache2-mod-php7.4 
           - php-mysql 
-          - php-curl 
-          - mysql-server-8.0
+          - php-curl
+          - mysql-server 
           - python3-pycurl 
           - python3-mysqldb
           - unzip
 
     - name: "Fazendo download do wordpress"
       get_url:
-        url: "https://br.wordpress.org/lastest-pt_BR.zip"
-        dest: "/tmp/lastest-pt_BR.zip"
+        url: "https://br.wordpress.org/latest-pt_BR.zip"
+        dest: "/tmp/latest-pt_BR.zip"
       
     - name: "Fazendo descompactação do wordpress"
       unarchive:
-        src: "/tmp/lastest-pt_BR.zip"
+        src: "/tmp/latest-pt_BR.zip"
         dest: "/var/www"
-        remote_scr: yes
+        remote_src: yes
       become: yes
 
     - name: "Copiar arquivo do wordpress"
       copy:
-        src: "/tmp/lastest-pt_BR.zip"
+        src: "/var/www/wordpress/wp-config-sample.php"
         dest: "/var/www/wordpress/wp-config.php"
-        remote_scr: yes
+        remote_src: yes
       become: yes
 
     - name: "configurar senha"
+      become: yes
       replace:
         path: "/var/www/wordpress/wp-config.php"
-        regexp: "{{ item.value }}"
-        repplace: "{{ item.value}}"
+        regexp: "{{ item.regex }}"
+        replace: "{{ item.value }}"
       with_items:
         - { regex: 'nome_do_banco_de_dados_aqui', value: 'banco_wordpress' }
         - { regex: 'nome_de_usuario_aqui', value: 'root' }
-        - { regex: 'senha_aqui', value: 'root' }
-      become: yes
+        - { regex: 'senha_aqui', value: 'root@2022&2025' }
 
     - name: "Trocando pasta do render do apache para o wordpress"
       copy:
@@ -89,13 +70,15 @@
         dest: "/etc/apache2/sites-available/000-default.conf"
       become: yes
       notify:
-        - "restart apache"
+        - Restart apache
 
     - name: "Lavanta serviço do mysql"
       become: yes
       service:
         name: mysql
         state: started
+      notify:
+        - Restart apache
 
     - name: "Criando senha root mysql"
       ignore_errors: yes
@@ -103,7 +86,7 @@
       mysql_user:
         name: root
         host: localhost
-        password: root
+        password: root@2022&2025
         priv: "*.*:ALL,GRANT"
         state: present
 
@@ -111,9 +94,9 @@
       mysql_db:
         name: banco_wordpress
         login_user: root
-        login_password: root
+        login_password: root@2022&2025
         state: present
-      
+
     # - shell: cat /var/www/wordpress/wp-config.php
     #   register: ps
     # - debug:
