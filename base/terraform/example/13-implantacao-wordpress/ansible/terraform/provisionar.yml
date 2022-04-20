@@ -5,31 +5,53 @@
   #     service:
 
   tasks:
-    - name: "Renomar maquina"
+    - name: "Renomear maquina"
       shell: hostname "wordpress" && echo "wordpress" > /etc/hostname
       become: yes # roda como sudo
 
-    - name: "Roda: sudo apt update"
-      become: yes # roda como sudo
+    # - name: "Roda: sudo apt update"
+    #   become: yes # roda como sudo
+    #   apt:
+    #     upgrade: yes
+    #     update_cache: yes
+    #     cache_valid_time: 86400 #Um dia
+    
+    - name: "Update all packages to their latest version"
+      become: yes
       apt:
-        upgrade: yes
+        name: "*"
+        state: latest 
         update_cache: yes
 
-    - name: "Instalar em lote"
+    # - name: "Instala pacotes em lote"
+    #   apt:
+    #     name: "{{ item }}"
+    #     state: latest
+    #     become: yes # roda com sudo
+    #   with_items:
+    #     - php7.4
+    #     - apache2
+    #     - libapache2-mod-php7.4
+    #     - php-mysql
+    #     - php-curl
+    #     - mysql-server
+    #     - python3-pycurl
+    #     - python3-mysqldb
+    #     - unzip
+
+    - name: "Instala pacote em lote"
+      become: yes # roda com sudo
       apt:
-        name: "{{ item }}"
-        state: latest
-      become: yes
-      with_items:
-        - php7.4
-        - apache2
-        - libapache2-mod-php7.4
-        - php-mysql
-        - php-curl
-        - mysql-server
-        - python3-pycurl
-        - python3-mysqldb
-        - unzip
+        pkg:
+          - php7.4 
+          - apache2 
+          - libapache2-mod-php7.4 
+          - php-mysql 
+          - php-curl 
+          - mysql-server-8.0
+          - python3-pycurl 
+          - python3-mysqldb
+          - unzip
 
     - name: "Fazendo download do wordpress"
       get_url:
@@ -92,9 +114,9 @@
         login_password: root
         state: present
       
-    - shell: cat /var/www/wordpress/wp-config.php
-      register: ps
-    - debug:
-        msg: " '{{ ps.stdout_lines }}' "
-# Rodando ansible
-# ansible-playbook -i hosts provisionar.yml -u ubuntu --private-key ../../ssh/id_rsa
+    # - shell: cat /var/www/wordpress/wp-config.php
+    #   register: ps
+    # - debug:
+    #     msg: " '{{ ps.stdout_lines }}' "
+  # Rodando ansible
+  # ansible-playbook -i hosts provisionar.yml -u ubuntu --private-key ../../ssh/id_rsa
