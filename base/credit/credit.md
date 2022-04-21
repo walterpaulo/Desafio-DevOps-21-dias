@@ -17,6 +17,7 @@
 * Install Terraform->[https://learn.hashicorp.com/tutorials/terraform/install-cli](https://learn.hashicorp.com/tutorials/terraform/install-cli)
 * Editor online texto ->[https://wordpad.cc/](https://wordpad.cc/)
 * Endereço IP->[https://pt.wikipedia.org/wiki/Endere%C3%A7o_IP](https://pt.wikipedia.org/wiki/Endere%C3%A7o_IP)
+* Pipelines de CI/CD->[https://www.redhat.com/pt-br/topics/devops/what-cicd-pipeline](https://www.redhat.com/pt-br/topics/devops/what-cicd-pipeline)
 * Professor Danilo->([Linkedin](https://www.linkedin.com/in/danilo-aparecido-dos-santos-03101034/)) - Torne-se um programador->[https://www.torneseumprogramador.com.br/](https://www.torneseumprogramador.com.br/)
 * Terraform->[https://www.terraform.io/](https://www.terraform.io/)
 
