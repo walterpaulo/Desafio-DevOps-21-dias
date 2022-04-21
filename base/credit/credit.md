@@ -14,6 +14,7 @@
 * AWS - >[https://aws.amazon.com/pt/](https://aws.amazon.com/pt/)
 * AWS CLI (Installing or updating) ->[https://aws.amazon.com/pt/](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
 * Calculadora de rede para IPV4 ->[https://www.site24x7.com/pt/tools/ipv4-sub-rede-calculadora.html](https://www.site24x7.com/pt/tools/ipv4-sub-rede-calculadora.html)
+* Jenkins->[https://www.jenkins.io/](https://www.jenkins.io/)
 * Install Terraform->[https://learn.hashicorp.com/tutorials/terraform/install-cli](https://learn.hashicorp.com/tutorials/terraform/install-cli)
 * Editor online texto ->[https://wordpad.cc/](https://wordpad.cc/)
 * Endereço IP->[https://pt.wikipedia.org/wiki/Endere%C3%A7o_IP](https://pt.wikipedia.org/wiki/Endere%C3%A7o_IP)
